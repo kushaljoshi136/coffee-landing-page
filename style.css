@@ -437,6 +437,7 @@ main .star-container a{
 
 footer{
     width: 100vw;
+    position: relative;
     padding: 1.5rem 3.5rem;
     display: grid;
     grid-template-areas: 'footer-1 footer-2';
@@ -504,6 +505,12 @@ footer{
     background-color:#835E4C;
     padding-inline: 15px;
     cursor: pointer;
+}
+footer .hr{
+    position: absolute;
+    width: 100vw;
+    border-bottom: 1px solid rgb(160,88,60);
+    bottom: 65%;
 }
 @media(max-width:550px){
     main{
@@ -698,5 +705,8 @@ footer{
         color: #F7EADA;
         background-color:#835E4C;
         padding-inline: 15px;
+    }
+    footer .hr{
+        visibility: hidden;
     }
 }
