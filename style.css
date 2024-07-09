@@ -612,7 +612,9 @@ footer .hr{
         margin-block: 1.5rem;
         margin-inline: 3px;
     }
-  
+    .main-2 .cold-card .card-text p{
+        font-size: 13px;
+    }
 
     .main-3 .main-3-menu-card{
         overflow-x: scroll;
