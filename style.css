@@ -19,6 +19,7 @@ main nav{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
+    position: relative;
 }
 main nav ul{
     list-style: none;
@@ -111,6 +112,42 @@ main nav .nav-coffee-img{
 }
 .menu-text{
     visibility: hidden;
+    
+}
+.menu-text a:hover{
+    color: white;
+}
+.drop-down-menu{
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    flex-direction:column;
+    padding: 1.5rem 0rem;
+    top: 82%;
+    right: -40px;
+    left: 10p;
+    background-color: #ffffff30;
+    width: 50vw;
+    visibility: hidden;
+}
+.drop-down-menu li{
+    width: 100%;
+}
+.drop-down-menu li a{
+    font-size: 1rem;
+    padding: unset;
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+}
+.drop-down-menu li:hover{
+    background-color: #f3dcc6;
+    color: white;
+}
+.menu-text:focus-within .drop-down-menu{
+    visibility: visible;
+    /* display: none; */
 }
 .background-color-div{
     position: absolute;
@@ -532,8 +569,12 @@ footer .hr{
         position: absolute;
         visibility: visible;
         right: 10%;
-        font-weight: 600;
+        font-weight: 500;
     }
+    .menu-text a{
+        color: white;
+    }
+
     .hero-container{
         width: 100%;
         display: flex;
