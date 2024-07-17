@@ -229,7 +229,8 @@ main nav .nav-coffee-img{
     color:  rgba(255, 255, 255, 0.852);
 }
 .cold-card:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    transform: translateY(-20px);
     bottom: -100px;
     background-color: #FFBD7F !important;
     color: #2F2105 !important;
@@ -367,10 +368,12 @@ main .star-container a{
     margin-block: 2rem;
     margin-inline: 1rem;
     color:rgba(255, 255, 255, 0.852);
+    transition: 0.3s;
 }
 .menu:hover {
     background-color: #FFBD7F !important;
     color: #2F2105 !important;
+    transform: scale(1.1);
 }
 .main-3 .card-img{
     height: 100px;
